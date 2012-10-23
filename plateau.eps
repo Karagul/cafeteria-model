@@ -1,0 +1,1230 @@
+%!PS-Adobe-3.0
+%%DocumentNeededResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Helvetica-Oblique
+%%+ font Helvetica-BoldOblique
+%%+ font Symbol
+%%DocumentMedia: a4 595 841 0 () ()
+%%Title: R Graphics Output
+%%Creator: R Software
+%%Pages: (atend)
+%%Orientation: Landscape
+%%BoundingBox: 18 18 577 824
+%%EndComments
+%%BeginProlog
+/bp  { gs 595.00 0 translate 90 rotate gs } def
+% begin .ps.prolog
+/gs  { gsave } def
+/gr  { grestore } def
+/ep  { showpage gr gr } def
+/m   { moveto } def
+/l  { rlineto } def
+/np  { newpath } def
+/cp  { closepath } def
+/f   { fill } def
+/o   { stroke } def
+/c   { newpath 0 360 arc } def
+/r   { 4 2 roll moveto 1 copy 3 -1 roll exch 0 exch rlineto 0 rlineto -1 mul 0 exch rlineto closepath } def
+/p1  { stroke } def
+/p2  { gsave bg fill grestore newpath } def
+/p3  { gsave bg fill grestore stroke } def
+/p6  { gsave bg eofill grestore newpath } def
+/p7  { gsave bg eofill grestore stroke } def
+/t   { 5 -2 roll moveto gsave rotate
+       1 index stringwidth pop
+       mul neg 0 rmoveto show grestore } def
+/ta  { 4 -2 roll moveto gsave rotate show } def
+/tb  { 2 -1 roll 0 rmoveto show } def
+/cl  { grestore gsave newpath 3 index 3 index moveto 1 index
+       4 -1 roll lineto  exch 1 index lineto lineto
+       closepath clip newpath } def
+/rgb { setrgbcolor } def
+/s   { scalefont setfont } def
+% end   .ps.prolog
+% begin encoding
+/ISOLatin2Encoding [
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus /comma /minus /period /slash
+ /zero /one /two /three /four /five /six /seven
+ /eight /nine /colon /semicolon /less /equal /greater /question
+ /at /A /B /C /D /E /F /G
+ /H /I /J /K /L /M /N /O
+ /P /Q /R /S /T /U /V /W
+ /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+ /quoteleft /a /b /c /d /e /f /g
+ /h /i /j /k /l /m /n /o
+ /p /q /r /s /t /u /v /w
+ /x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /space /Aogonek /breve /Lslash /currency /Lcaron /Sacute /section
+ /dieresis /Scaron /Scedilla /Tcaron /Zacute /hyphen /Zcaron /Zdotaccent
+ /degree /aogonek /ogonek /lslash /acute /lcaron /sacute /caron
+ /cedilla /scaron /scedilla /tcaron /zacute /hungarumlaut /zcaron /zdotaccent
+ /Racute /Aacute /Acircumflex /Abreve /Adieresis /Lacute /Cacute /Ccedilla
+ /Ccaron /Eacute /Eogonek /Edieresis /Ecaron /Iacute /Icircumflex /Dcaron
+ /Dcroat /Nacute /Ncaron /Oacute /Ocircumflex /Ohungarumlaut /Odieresis /multiply
+ /Rcaron /Uring /Uacute /Uhungarumlaut /Udieresis /Yacute /Tcommaaccent /germandbls
+ /racute /aacute /acircumflex /abreve /adieresis /lacute /cacute /ccedilla
+ /ccaron /eacute /eogonek /edieresis /ecaron /iacute /icircumflex /dcaron
+ /dcroat /nacute /ncaron /oacute /ocircumflex /ohungarumlaut /odieresis /divide
+ /rcaron /uring /uacute /uhungarumlaut /udieresis /yacute /tcommaaccent /dotaccent
+]
+ def
+% end encoding
+%%IncludeResource: font Helvetica
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin2Encoding def
+  currentdict
+  end
+/Font1 exch definefont pop
+%%IncludeResource: font Helvetica-Bold
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin2Encoding def
+  currentdict
+  end
+/Font2 exch definefont pop
+%%IncludeResource: font Helvetica-Oblique
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin2Encoding def
+  currentdict
+  end
+/Font3 exch definefont pop
+%%IncludeResource: font Helvetica-BoldOblique
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin2Encoding def
+  currentdict
+  end
+/Font4 exch definefont pop
+%%IncludeResource: font Symbol
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+  end
+/Font5 exch definefont pop
+%%EndProlog
+%%Page: 1 1
+bp
+77.04 91.44 793.65 518.24 cl
+0 setgray
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+103.58 107.25 m
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+170.00 107.25 lineto
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+236.42 107.25 lineto
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 161.73 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+302.84 268.98 lineto
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+369.26 268.98 lineto
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+435.68 268.98 lineto
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 43.91 l
+0.67 49.07 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+502.10 361.96 lineto
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 140.47 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+568.52 502.43 lineto
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+634.93 502.43 lineto
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+701.35 502.43 lineto
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.67 0 l
+0.66 0 l
+0.66 0 l
+0.67 0 l
+o
+18.00 18.00 823.89 577.28 cl
+0 setgray
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+103.58 91.44 m
+663.53 0 l
+o
+np
+103.58 91.44 m
+0 -7.20 l
+o
+np
+236.29 91.44 m
+0 -7.20 l
+o
+np
+368.99 91.44 m
+0 -7.20 l
+o
+np
+501.70 91.44 m
+0 -7.20 l
+o
+np
+634.40 91.44 m
+0 -7.20 l
+o
+np
+767.11 91.44 m
+0 -7.20 l
+o
+/Font1 findfont 12 s
+103.58 65.52 (0) .5 0 t
+236.29 65.52 (2) .5 0 t
+368.99 65.52 (4) .5 0 t
+501.70 65.52 (6) .5 0 t
+634.40 65.52 (8) .5 0 t
+767.11 65.52 (10) .5 0 t
+np
+77.04 92.47 m
+0 403.41 l
+o
+np
+77.04 92.47 m
+-7.20 0 l
+o
+np
+77.04 159.70 m
+-7.20 0 l
+o
+np
+77.04 226.94 m
+-7.20 0 l
+o
+np
+77.04 294.18 m
+-7.20 0 l
+o
+np
+77.04 361.41 m
+-7.20 0 l
+o
+np
+77.04 428.65 m
+-7.20 0 l
+o
+np
+77.04 495.88 m
+-7.20 0 l
+o
+59.76 92.47 (60) .5 90 t
+59.76 159.70 (80) .5 90 t
+59.76 226.94 (100) .5 90 t
+59.76 294.18 (120) .5 90 t
+59.76 361.41 (140) .5 90 t
+59.76 428.65 (160) .5 90 t
+59.76 495.88 (180) .5 90 t
+np
+77.04 91.44 m
+716.61 0 l
+0 426.80 l
+-716.61 0 l
+0 -426.80 l
+o
+18.00 18.00 823.89 577.28 cl
+/Font1 findfont 12 s
+0 setgray
+435.34 36.72 (cena) .5 0 t
+30.96 224.81 (ocz) 90 ta
+-0.180 (ekiw) tb
+-0.180 (ana liczba kupuj±cych) tb gr
+ep
+%%Trailer
+%%Pages: 1
+%%EOF
